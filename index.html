@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css"/>
+	<title>Document</title>
+</head>
+<body>
+	<div class="body">
+		<header>
+			<h1>toDoList</h1>
+		</header>
+
+		<main>
+			<section>
+				<div class="new">
+					<input id="addTask" type="text" placeholder="Ajouter votre tache ici..." required/>
+					<button onclick="toDo.addTaskClick()">AJOUTER</button>
+				</div>
+			</section>
+
+			<section class="tasks">
+				<ul id="list">
+					<li class="task">
+						<div>
+							<label class="container">
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							  </label>
+						</div>
+						<div style=" margin-left: 0; flex-grow: 2; text-align: center; word-wrap: wrap;"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro natus facere iusto error quas, iure vel iste. A sit fugit necessitatibus, et possimus excepturi sunt. Nemo tenetur illo quae debitis.</p></div>
+						<div class="trash" ><a href="google.com"><img src="trash.png"/ class="img"></a></div>                                                           
+					</li>
+				</ul>
+			</section>	
+		</main>
+	</div>
+
+	<footer>
+
+	</footer>
+	<script src="script.js"></script>	
+</body>
+</html>

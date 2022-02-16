@@ -1,0 +1,240 @@
+body {
+	background-color: #f5f6fa;
+	color: blanchedalmond;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.body {
+	width: 50%;
+	height: 100%;
+	border: 1px solid blanchedalmond;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 250px;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	background-color: #192a56;
+
+}
+
+.task {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	background-color:#dcdde1;
+	border-radius: 1px 10px 1px 10px;
+	margin-bottom: 1rem;
+	transition: transform .5s;
+}
+
+.task .check {
+	background-color: #192a56;
+}
+
+.task p {
+	color: black;
+	font-family: initial;
+}
+
+.img {
+	width: 40px;
+}
+
+#list {
+	width: 100%;
+	padding-top: 20px;
+	height: 100%; 
+	margin: 0% 5% 0% 5%;
+}
+
+h1{
+	width: 100px;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+.new {   
+	width: 100%;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	gap: 1em;
+}
+.new input {
+	width: 100%;
+	/* min-width: 5rem; */
+	height: 40px;
+	border-radius: 20px;
+	background-color: white;
+	border: none;
+	padding-left: 1rem;
+
+}
+.new button {
+	border-radius: 15px;
+	border: none;
+	background-color: white;
+	color: black;
+	transition: background 0.3s;
+	padding: 0.8rem 1.5rem;
+}
+
+
+section{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section ul {
+	width: 100%;
+	height: 100%;
+}
+
+.tasks ul {
+	display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+  
+.new{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.new button:hover {
+	background-color: #192a56;
+	border: 1px solid white;
+	color: white;
+}
+
+  /* The Checkbox container */
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+	background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+
+  @media only screen and (min-width: 600px) {
+	  .new{
+		justify-content: space-between;
+		  margin: 1rem 1rem 1rem 1rem ;
+	  }
+  }
+  @media only screen and (max-width: 600px) {
+	  html{
+		font-size: 0.8rem;
+	  }
+	  header h1{
+		font-size: 2rem;
+	  }
+	  .new{
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: space-between;
+		  align-items: center;
+	  }
+	 .new input{
+		  font-size: 0.8rem;
+		  width: 85%;
+	  }
+	  
+	  button {
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 0.6rem;
+		padding: 0.4rem 0.75rem;
+	  }
+	  .task p{
+		word-break: break-word;
+	  }
+  }
+
+
+  /* ANIMATIONS */
+  .task:first-of-type {
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-name: glissement;
+  }
+  @keyframes glissement {
+	from {
+	  margin-top: -10%;
+	}
+  
+	to {
+	  margin-top: 0%;
+	}
+  }
+
+  .task:hover{
+	transform: scale(1.1);
+  }
