@@ -1,2 +1,2 @@
 $ dig vkanatetodolist.com +nostats +nocomments +nocmd
-    > vkanatetodolist.com              3592    IN      CNAME   Vamoussa00225.github.io.
+    > vkanatetodolist.com              3592    IN      CNAME vkanatetodolist.com  
