@@ -1,6 +1,6 @@
 # todolist
 
-Vous pouvez visiter le site à travers ce lien : https://vamoussa00225.github.io/memeCreator/
+Vous pouvez visiter le site à travers ce lien : https://vamoussa00225.github.io/todolist/
 
 Réalisation d'une plateforme de gestion de tache (toDoList)
 Langages Utilises: HTML, CSS et JAVASCRIPT
